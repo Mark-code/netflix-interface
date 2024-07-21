@@ -13,3 +13,13 @@ function checkScroll() {
 }
 
 window.addEventListener('scroll', checkScroll);
+
+document.addEventListener('click', function(event) {
+    var minhaDiv = document.getElementById('pesquisa');
+    var meuInput = document.getElementById('barra');
+    
+    var isClickInsideDiv = minhaDiv.contains(event.target);
+    if (!isClickInsideDiv) {
+        meuInput.value = '';
+    }
+});

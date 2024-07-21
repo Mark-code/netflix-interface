@@ -22,11 +22,18 @@
                             <li><a href="#">Mais recentes</a></li>
                             <li><a href="#">Minha lista</a></li>
                         </ul>
-                        <div id="pesquisa">
-                            <a href="#">
-                                <img src="images/lupa.png" class="lupa" width="30" height="30" alt="pesquisa">
-                            </a>
-                        </div>       
+                        <form action="index.html">
+                            <fieldset>
+                                <search id="pesquisa" class="clear">
+                                    <label>
+                                    <input type="search" placeholder=" pesquise algo" id="barra" onblur="clearInput(this)" name="barra" required autocomplete="off" class="clear">    
+                                        <button type="submit">
+                                            <img src="images/lupa.png" class="lupa" width="30" height="30" alt="pesquisa">
+                                        </button>
+                                    </label>    
+                                </search>
+                            </fieldset>       
+                        </form>
                     </nav>
                 </header>
                 <div class="cont">
@@ -54,7 +61,7 @@
         <div>
             <img src="images/git.png" width="30" height="30" alt="github">
             <a href="https://github.com/Mark-code">
-                © 2024 mark-code.
+                ©2024 mark-code
             </a>
         </div>
     </footer>
